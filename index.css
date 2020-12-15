@@ -1,0 +1,141 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background: #7d7d99;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "listetaches listetaches" "poste1 poste2" "poste3 poste4" "tachesfinis tachesfinis" "tacheselected tacheselected";
+}
+
+.section__poste1__taches {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "poste1__taches poste2__taches" "poste3__taches poste4__taches";
+}
+
+.section__poste2__taches {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "poste1__taches poste2__taches" "poste3__taches poste4__taches";
+}
+
+.section__poste3__taches {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "poste1__taches poste2__taches" "poste3__taches poste4__taches";
+}
+
+.section__poste4__taches {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "poste1__taches poste2__taches" "poste3__taches poste4__taches";
+}
+
+.section__listetaches {
+  grid-area: listetaches;
+  background: #6e8f49;
+  border: 1px solid #000000;
+}
+
+.section__poste1 {
+  grid-area: poste1;
+  background: #d37143;
+  border: 1px solid #000000;
+}
+
+.section__poste2 {
+  grid-area: poste2;
+  background: #db7140;
+  border: 1px solid #000000;
+}
+
+.section__poste3 {
+  grid-area: poste3;
+  background: #da794d;
+  border: 1px solid #000000;
+}
+
+.section__poste4 {
+  grid-area: poste4;
+  background: #d68560;
+  border: 1px solid #000000;
+}
+
+.section__tachesfinis {
+  grid-area: tachesfinis;
+  background: #6e8f49;
+  border: 1px solid #000000;
+}
+
+.section__tacheselectioned {
+  grid-area: tacheselected;
+  background: #6e8f49;
+  border: 1px solid #000000;
+}
+
+.section__poste1__taches {
+  grid-area: poste1__taches;
+  background: #6e8f49;
+  border: 1px solid #000000;
+}
+
+.section__poste2__taches {
+  grid-area: poste2__taches;
+}
+
+.section__poste3__taches {
+  grid-area: poste3__taches;
+}
+
+.section__poste4__taches {
+  grid-area: poste4__taches;
+}
+
+.loader {
+  background: url("images/image.png") 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+  cursor: wait;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.loader h1 {
+  color: #458976;
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-variant: small-caps;
+  font-weight: 700;
+  height: 700px;
+  line-height: 700px;
+  margin: 0 0 10px;
+  padding: 0;
+  text-align: center;
+}
+
+.section__listetaches__taches__button {
+  background: #458976;
+}
+
+/*# sourceMappingURL=index.css.map */
